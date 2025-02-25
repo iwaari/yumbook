@@ -92,11 +92,10 @@
             transform: scale(1.05);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-
         .btn-primary {
-            background-color: #e179bfd9;
-            color: #FFF5F5;
-        }
+        background-color: #FFF;
+        color: #e179bfd9;
+    }
 
         .btn-secondary {
             background-color: #5D4037;
@@ -266,8 +265,8 @@
                 <!-- <i class="fas fa-utensils"></i>--> YumBook
             </a>
             <nav class="nav-links">
-                <button onclick="location.href='recipes.html'" class="btn btn-secondary">Menu</button>
-                <button onclick="location.href='register.html'" class="btn btn-secondary">Register</button>
+                <button onclick="location.href='recipes.html'" class="btn btn-primary"><i class="fas fa-book-open"></i>All Recipes</button>
+                <button onclick="location.href='register.html'" class="btn btn-primary">Register</button>
             </nav>
         </div>
     </header>
@@ -343,7 +342,7 @@
                     // Перенаправление в зависимости от роли
                     setTimeout(() => {
                         if (data.user && data.user.role === 'admin') {
-                            window.location.href = 'admin.html';
+                            window.location.href = 'recipes.html';
                         } else {
                             window.location.href = 'recipes.html';
                         }

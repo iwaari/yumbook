@@ -104,12 +104,12 @@
         }
 
         .btn-primary {
-            background-color: #e179bfd9;
-            color: white;
-        }
+        background-color: #FFF;
+        color: #e179bfd9;
+    }
 
         .btn-secondary {
-            background-color: #5D4037;
+            background-color: #e179bfd9;
             color: white;
         }
 
@@ -488,23 +488,23 @@
             <nav class="nav-links">
                 <div id="authButtons">
                     <div id="guestButtons" style="display: none;">
-                        <button onclick="location.href='register.html'" class="btn btn-secondary">
+                        <button onclick="location.href='register.html'" class="btn btn-primary">
                             <i class="fas fa-user-plus"></i> Register
                         </button>
-                        <button onclick="location.href='login.html'" class="btn btn-secondary">
+                        <button onclick="location.href='login.html'" class="btn btn-primary">
                             <i class="fas fa-sign-in-alt"></i> Login
                         </button>
                     </div>
                     <div id="userButtons" style="display: none;">
-                        <button onclick="location.href='add-recipe.html'" class="btn btn-secondary">
+                        <button onclick="location.href='add-recipe.html'" class="btn btn-primary">
                             <i class="fas fa-plus"></i> Add Recipe
                         </button>
-                        <button onclick="logout()" class="btn btn-secondary">
+                        <button onclick="logout()" class="btn btn-primary">
                             <i class="fas fa-sign-out-alt"></i> Logout
                         </button>
                     </div>
                 </div>
-                <button onclick="location.href='recipes.html'" class="btn btn-secondary">
+                <button onclick="location.href='recipes.html'" class="btn btn-primary">
                     <i class="fas fa-book-open"></i> All Recipes
                 </button>
             </nav>
@@ -727,7 +727,7 @@
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
                     <p>${message}</p>
-                    <button onclick="location.href='recipes.html'" class="btn btn-secondary">
+                    <button onclick="location.href='recipes.html'" class="btn btn-primary">
                         Back to Recipes
                     </button>
                 </div>

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Recipe - YumBook</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/add-recipe.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -106,12 +105,12 @@
          .form-group textarea {
             width: 100%;
             padding: 0.8rem 1rem 0.8rem 2.5rem;
-            border: 2px solid #FFD1DC;
-            border-radius: 15px;
+            border: 2px solid #eee;
+            border-radius: 8px;
             font-family: 'Poppins', sans-serif;
             font-size: 1rem;
             transition: all 0.3s ease;
-            background-color: #FFF5F5;
+            background-color: #FFf ;
          }
 
          .form-group input:focus,
@@ -119,61 +118,81 @@
          .form-group textarea:focus {
             outline: none;
             border-color: #e179bfd9;
-            box-shadow: 0 0 0 3px rgba(255, 107, 129, 0.25);
          }
 
          .form-group textarea {
             min-height: 120px;
             resize: vertical;
          }
+         #recipe-form textarea {
+    min-height: 120px;
+    resize: vertical;
+    padding: 0.8rem;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
 
+#recipe-form textarea:focus {
+    border-color: #e179bfd9;
+    outline: none;
+}
+
+#recipe-form select {
+    padding: 0.8rem;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#recipe-form select:focus {
+    border-color: #e179bfd9;
+    outline: none;
+}
          .btn-container {
             display: flex;
             justify-content: space-between;
             margin-top: 1rem;
          }
 
-         .btn-primary {
-            background: linear-gradient(45deg, #e179bfd9, #FF8E9E);
-            border: none;
+         .btn {
             padding: 0.8rem 1.5rem;
+            border: none;
             border-radius: 50px;
-            color: white;
-            font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
+            font-weight: 600;
             display: flex;
             align-items: center;
-            justify-content: center;
             gap: 0.5rem;
-            box-shadow: 0 4px 10px rgba(255, 107, 129, 0.3);
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+         .btn-primary {
+            background: #e179bfd9;
+            color: white;
          }
 
          .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(255, 107, 129, 0.4);
          }
 
          .btn-secondary {
             background: white;
-            border: 2px solid #FFD1DC;
-            padding: 0.8rem 1.5rem;
-            border-radius: 50px;
             color: #e179bfd9;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
          }
 
          .btn-secondary:hover {
-            background-color: #FFF5F5;
             transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
          }
 
          .success-message,
@@ -254,7 +273,6 @@
     <div class="container main-container">
         <div class="auth-container">
             <div class="form-header">
-                <i class="fas fa-plus-circle"></i>
                 <h2>Add New Recipe</h2>
             </div>
             
